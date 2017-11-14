@@ -35,4 +35,3 @@ plt.pie(pie_data, labels=labels)
 plt.title('Graph 1')
 plt.show()
 
-
