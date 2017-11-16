@@ -17,6 +17,7 @@ as_list = set()
 for x in data:
     # print(x)
     as_list.add(int(x[0]))
+    as_list.add(int(x[1])) # added
 as_list = list(as_list)
 as_list.sort()
 # print(as_list)
@@ -26,9 +27,11 @@ for x in as_list:
     as_list1.append([x, 0])
 
 print(as_list1)
+print(len(as_list1))
 for x in data:
     # ++ on the second number for the number at the index in as_list
     as_list1[as_list.index(int(x[0]))][1] += 1
+    as_list1[as_list.index(int(x[1]))][1] += 1 # added
 
 print(as_list1)
 
