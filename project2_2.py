@@ -41,9 +41,7 @@ bin5_100 = 0
 bin100_200 = 0
 bin200_1000 = 0
 bin1000_plus = 0
-as_list2 = []
 for x in as_list1:
-    as_list2.append(x[1])
     if x[1] == 1:
         bin1 += 1
     elif x[1] < 5:
@@ -60,7 +58,7 @@ for x in as_list1:
 bin_list = [bin1, bin2_5, bin5_100, bin100_200, bin200_1000, bin1000_plus]
 bin_list_strings = ['1', '2-5', '5-100', '100-200', '200-1000', '1000+']
 
-print(as_list2)
+
 print(bin_list)
 print(sum(bin_list))
 total_bins_num = sum(bin_list)
